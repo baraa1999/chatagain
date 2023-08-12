@@ -1,0 +1,154 @@
+{
+  "project_info": {
+    "project_number": "325970623729",
+    "project_id": "chat-app-9b59a",
+    "storage_bucket": "chat-app-9b59a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325970623729:android:cf01913d2f2621bd0f3d50",
+        "android_client_info": {
+          "package_name": "com.example.chatagain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325970623729-bvve0mlau0sjuh7s38ln9hug20dd4jnt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHkghk0t3gSkHv5w247cf-MYk73yonz8g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325970623729-bvve0mlau0sjuh7s38ln9hug20dd4jnt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "325970623729-50a6m6420o3e62dais81uvsf2lk0gtdk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mahadtaFirbase.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325970623729:android:53c05dfcaccace550f3d50",
+        "android_client_info": {
+          "package_name": "com.example.chatend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325970623729-bvve0mlau0sjuh7s38ln9hug20dd4jnt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHkghk0t3gSkHv5w247cf-MYk73yonz8g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325970623729-bvve0mlau0sjuh7s38ln9hug20dd4jnt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "325970623729-50a6m6420o3e62dais81uvsf2lk0gtdk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mahadtaFirbase.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325970623729:android:ee7d2e4935dfca510f3d50",
+        "android_client_info": {
+          "package_name": "com.example.chatschool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325970623729-bvve0mlau0sjuh7s38ln9hug20dd4jnt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHkghk0t3gSkHv5w247cf-MYk73yonz8g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325970623729-bvve0mlau0sjuh7s38ln9hug20dd4jnt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "325970623729-50a6m6420o3e62dais81uvsf2lk0gtdk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mahadtaFirbase.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325970623729:android:bc39413868ea08fb0f3d50",
+        "android_client_info": {
+          "package_name": "com.example.mahadta_firbase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325970623729-bvve0mlau0sjuh7s38ln9hug20dd4jnt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHkghk0t3gSkHv5w247cf-MYk73yonz8g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325970623729-bvve0mlau0sjuh7s38ln9hug20dd4jnt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "325970623729-50a6m6420o3e62dais81uvsf2lk0gtdk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mahadtaFirbase.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
