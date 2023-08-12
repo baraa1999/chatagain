@@ -1,4 +1,5 @@
 import 'package:chatagain/pages/chat_page.dart';
+import 'package:chatagain/pages/cubit/register_cubit.dart';
 import 'package:chatagain/pages/cubits/cubit/login_cubit.dart';
 import 'package:chatagain/pages/logain_page.dart';
 import 'package:chatagain/pages/register_page.dart';
@@ -19,13 +20,16 @@ class Chat extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => LoginCubit(),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(create: (context) => LoginCubit()),
+        BlocProvider(create: (context) => RegisterCubit()),
+      ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         routes: {
           LoginPage.id: (context) => LoginPage(),
-          RegisterPage.id: (context) => const RegisterPage(),
+          RegisterPage.id: (context) => RegisterPage(),
           ChatPage.id: (context) => ChatPage()
         },
         initialRoute: LoginPage.id,
