@@ -5,4 +5,7 @@ sealed class ChatState {}
 
 class ChatInitial extends ChatState {}
 
-class Chatsucess extends ChatState {}
+class Chatsucess extends ChatState {
+  List<Message> messages = [];
+  Chatsucess({required this.messages});
+}
