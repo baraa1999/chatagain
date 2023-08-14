@@ -1,5 +1,5 @@
+import 'package:chatagain/pages/cubit/auth_cubit/auth_cubit.dart';
 import 'package:chatagain/pages/cubits/chat_cubit/cubit/chat_cubit.dart';
-import 'package:chatagain/pages/cubits/cubit/login_cubit.dart';
 import 'package:chatagain/pages/register_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +20,7 @@ class LoginPage extends StatelessWidget {
   String? email, password;
   @override
   Widget build(BuildContext context) {
-    return BlocListener<LoginCubit, LoginState>(
+    return BlocListener<AuthCubit, AuthState>(
       listener: (context, state) {
         if (state is LoginLoading) {
           isLoading = true;
@@ -102,7 +102,7 @@ class LoginPage extends StatelessWidget {
                   CustomButon(
                     onTap: () async {
                       if (formKey.currentState!.validate()) {
-                        BlocProvider.of<LoginCubit>(context)
+                        BlocProvider.of<AuthCubit>(context)
                             .loginUser(email: email!, password: password!);
                       } else {}
                     },
