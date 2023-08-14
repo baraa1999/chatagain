@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:chatagain/models/message.dart';
 import 'package:chatagain/pages/cubits/chat_cubit/cubit/chat_cubit.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +18,8 @@ class ChatPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var email = ModalRoute.of(context)!.settings.arguments; // request argument
+    var email = ModalRoute.of(context)!.settings.arguments.toString();
+    // request argument
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
@@ -37,13 +40,10 @@ class ChatPage extends StatelessWidget {
       body: Column(
         children: [
           Expanded(
-            child: BlocConsumer<ChatCubit, ChatState>(
-              listener: (context, state) {
-                if (state is Chatsucess) {
-                  messagesList = state.messages;
-                }
-              },
+            child: BlocBuilder<ChatCubit, ChatState>(
               builder: (context, state) {
+                var messagesList =
+                    BlocProvider.of<ChatCubit>(context).messagesList;
                 return ListView.builder(
                   reverse: true,
                   controller: _controller,
@@ -64,6 +64,9 @@ class ChatPage extends StatelessWidget {
             child: TextField(
               controller: controller,
               onSubmitted: (data) {
+                BlocProvider.of<ChatCubit>(context)
+                    .sendMessage(message: data, email: email);
+
                 controller.clear();
                 _controller.animateTo(
                   0,
