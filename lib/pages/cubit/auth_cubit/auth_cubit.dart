@@ -43,4 +43,11 @@ class AuthCubit extends Cubit<AuthState> {
       emit(RegisterFailur(errMessage: 'there was in error please try again'));
     }
   }
+
+  @override
+  void onChange(Change<AuthState> change) {
+    // TODO: implement onChange
+    super.onChange(change);
+    print(change);
+  }
 }
